@@ -1,0 +1,16 @@
+export const navigationItems = [
+  { id: 1, path: 'books/all', name: 'Все книги', count: 14 },
+  { id: 2, path: 'books/detectives', name: 'Детективы', count: 8 },
+  { id: 3, path: 'books/children', name: 'Детские книги', count: 14 },
+  { id: 4, path: 'books/foreign', name: 'Зарубежная литература', count: 2 },
+  { id: 5, path: 'books/histrory', name: 'История', count: 5 },
+  { id: 6, path: 'books/classic', name: 'Классическая литература', count: 12 },
+  { id: 7, path: 'books/psychology', name: 'Книги по психологии', count: 11 },
+  { id: 8, path: 'books/computers', name: 'Компьютерная литература', count: 54 },
+  { id: 9, path: 'books/culture', name: 'Культура и искусство', count: 5 },
+  { id: 10, path: 'books/science', name: 'Наука и образование', count: 2 },
+  { id: 11, path: 'books/nonfiction', name: 'Публицистическая литература', count: 0 },
+  { id: 12, path: 'books/handbooks', name: 'Справочники', count: 10 },
+  { id: 13, path: 'books/fantasy', name: 'Фантастика', count: 12 },
+  { id: 14, path: 'books/humor', name: 'Юмористическая литература', count: 8 },
+];

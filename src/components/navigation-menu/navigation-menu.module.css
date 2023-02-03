@@ -1,0 +1,30 @@
+.main {
+  display: flex;
+  flex-direction: column;
+}
+.menuItem {
+  margin-bottom: 42px;
+}
+.items {
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-left: 20px;
+}
+.item {
+  display: flex;
+}
+.item p > span {
+  margin-left: 8px;
+}
+.count {
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--grey-black-40);
+}
+@media screen and (max-width: 768px) {
+  .main {
+    display: none;
+  }
+}

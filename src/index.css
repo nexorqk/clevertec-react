@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
+:root {
+  --accept-color: #ff5253;
+  --white-color: #ffffff;
+  --dark-color: #363636;
+  --dark-30: rgba(54, 54, 54, 0.3);
+  --brand-color: #6e76f1;
+  --grey-black-5: #f9f9fa;
+  --grey-black-10: #ebebeb;
+  --grey-black-20: #bfc4c9;
+  --grey-black-40: #a7a7a7;
+  --grey-black-70: #727272;
+}
+body {
+  height: 100%;
+  justify-content: center;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #ffffff;
+  color: var(--dark-color);
+  letter-spacing: 0.1px;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+article > * + * {
+  margin-top: 1em;
+}
+input,
+button,
+textarea,
+select {
+  padding: 0;
+  font: inherit;
+}
+textarea:focus,
+input:focus {
+  outline: none;
+}
+.greyBlack40 {
+  color: var(--grey-black-40);
+}
+.greyBlack70 {
+  color: var(--grey-black-70);
+}
+.white {
+  color: var(--white-color);
+}
+.dark {
+  color: var(--dark-color);
+}
+.h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+.h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+.h3 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+}
+.h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+.h5 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+}
+.p {
+  font-size: 16px;
+}
+.subtitleLarge {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+.subtitleSmall {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+}
+.bodyLarge {
+  font-size: 16px;
+  line-height: 24px;
+}
+.bodySmall {
+  font-size: 14px;
+  line-height: 18px;
+}
+.buttonLarge {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+}
+.buttonSmall {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+}
+.wrapper {
+  max-width: 1110px;
+  width: 90%;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .wrapper {
+    max-width: 640px;
+  }
+}
+@media (max-width: 320px) {
+  .h3 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .subtitleLarge {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .bodyLarge {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .wrapper {
+    max-width: 288px;
+  }
+}

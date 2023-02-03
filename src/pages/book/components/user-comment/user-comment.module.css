@@ -1,0 +1,16 @@
+.main {
+  margin-bottom: 42px;
+}
+.top {
+  display: flex;
+  align-items: center;
+}
+.avatar {
+  margin-right: 24px;
+}
+.name {
+  margin-right: 24px;
+}
+.bottomMargin {
+  margin-bottom: 16px;
+}

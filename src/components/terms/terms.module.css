@@ -1,0 +1,14 @@
+.main {
+  max-width: 825px;
+  padding-left: 6px;
+  margin-bottom: 62px;
+}
+.title {
+  margin-bottom: 32px;
+}
+@media screen and (max-width: 768px) {
+  .main {
+    width: 90%;
+    max-width: 640px;
+  }
+}

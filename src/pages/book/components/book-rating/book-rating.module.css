@@ -1,0 +1,107 @@
+.commonRating {
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 62px;
+}
+.ratingText {
+  margin-bottom: 16px;
+}
+.ratingStars {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid var(--grey-black-10);
+  padding-top: 16px;
+}
+.ratingStars > div {
+  margin-right: 24px;
+}
+.detailTitle {
+  max-width: 350px;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--grey-black-10);
+}
+.table {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  max-width: 1110px;
+  margin-bottom: 62px;
+}
+.tbody1 {
+  max-width: 330px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.tbody2 {
+  display: flex;
+  justify-content: space-between;
+  max-width: 635px;
+  width: 100%;
+}
+.mainLine {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.secondaryLine {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.longText {
+  max-width: 445px;
+}
+.reviewsTitle {
+  max-width: 350px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--grey-black-10);
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+.reviewsTitle > p {
+  margin-right: 6px;
+}
+.reviewsTitle > span {
+  font-size: 14px;
+  line-height: 24px;
+}
+.userComment {
+  margin-bottom: 42px;
+}
+.reviewButton {
+  margin-bottom: 42px;
+}
+@media screen and (max-width: 768px) {
+  .reviewButton button {
+    max-width: 640px;
+  }
+  .table {
+    max-width: 640px;
+  }
+  .tbody1 {
+    max-width: 300px;
+  }
+  .longText {
+    max-width: 167px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .table {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .mainLine th {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .tbody1 {
+    max-width: 225px;
+  }
+}
