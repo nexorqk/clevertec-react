@@ -1,3 +1,5 @@
+import classNames from 'classnames';
+
 import { ButtonPrimary, StarsMark } from '../../../../components';
 import { firstTable, secondTable } from '../../constants';
 import { UserComment } from '../user-comment';
@@ -23,42 +25,26 @@ export const BookRating = () => (
     </div>
     <table className={styles.table}>
       <tbody className={styles.tbody1}>
-        <tr className={styles.mainLine}>
-          {firstTable.map(({ id, title }) => (
-            <th className='subtitleLarge greyBlack40' key={id}>
-              {title}
-            </th>
-          ))}
-        </tr>
-        <tr className={styles.secondaryLine}>
-          {firstTable.map(({ id, subtitle }) => (
-            <td key={id} className={styles.longText}>
-              {subtitle}
-            </td>
-          ))}
-        </tr>
+        {firstTable.map(({ id, title, subtitle }) => (
+          <tr className={styles.tableLine} key={id}>
+            <td className={classNames('subtitleLarge greyBlack40', styles.tableTitle)}>{title}</td>
+            <td className={styles.tableSubtitle}>{subtitle}</td>
+          </tr>
+        ))}
       </tbody>
-      <tbody className={styles.tbody2}>
-        <tr className={styles.mainLine}>
-          {secondTable.map(({ id, title }) => (
-            <th className='subtitleLarge greyBlack40' key={id}>
-              {title}
-            </th>
-          ))}
-        </tr>
-        <tr className={styles.secondaryLine}>
-          {secondTable.map(({ id, subtitle }) => (
-            <td key={id} className={styles.longText}>
-              {subtitle}
-            </td>
-          ))}
-        </tr>
+      <tbody className={styles.tobdy2}>
+        {secondTable.map(({ id, title, subtitle }) => (
+          <tr className={styles.tableLine} key={id}>
+            <td className={classNames('subtitleLarge greyBlack40', styles.tableTitle)}>{title}</td>
+            <td className={styles.tableSubtitle}>{subtitle}</td>
+          </tr>
+        ))}
       </tbody>
     </table>
     <div className={styles.reviews}>
       <div className={styles.reviewsTitle}>
-        <p className='h5'>Отзывы</p>
-        <p className='greyBlack40'>2</p>
+        <p className={classNames('h5', styles.reviewsTitleT)}>Отзывы</p>
+        <p className={classNames(styles.reviewsTitleS, 'greyBlack40')}>2</p>
       </div>
       <div className={styles.userComment}>
         <UserComment name='Иван Иванов' date='5 января 2019' />
