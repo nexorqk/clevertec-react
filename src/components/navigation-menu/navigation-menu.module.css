@@ -23,7 +23,7 @@
   line-height: 24px;
   color: var(--grey-black-40);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1180px) {
   .main {
     display: none;
   }

@@ -1,8 +1,9 @@
 export type TermList = TitleObject[];
-type TitleObject = { title: string; children?: TitleObject[] };
+type TitleObject = { title: string; style?: string; children?: TitleObject[] };
 
 export const termsList: TermList = [
   {
+    style: 'bold',
     title:
       '1. Идейные соображения высшего порядка, а также высокое качество позиционных исследований представляет собой интересный эксперимент проверки экспериментов, поражающих по своей масштабности и грандиозности.',
     children: [
@@ -25,6 +26,7 @@ export const termsList: TermList = [
     ],
   },
   {
+    style: 'bold',
     title:
       '2. С учётом сложившейся международной обстановки, консультация с широким активом предоставляет широкие возможности для приоритизации разума над эмоциями.',
     children: [
@@ -49,6 +51,7 @@ export const termsList: TermList = [
     ],
   },
   {
+    style: 'bold',
     title:
       '3. Принимая во внимание показатели успешности, укрепление и развитие внутренней структуры требует от нас анализа приоритизации разума над эмоциями.',
     children: [

@@ -144,6 +144,13 @@ input:focus {
   font-size: 12px;
   line-height: 18px;
 }
+.bold {
+  font-weight: 700;
+  padding-left: 0;
+}
+.lightWeight {
+  font-weight: 400;
+}
 .wrapper {
   max-width: 1110px;
   width: 90%;

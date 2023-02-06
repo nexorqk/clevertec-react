@@ -25,11 +25,10 @@
 .user__text {
   margin-right: 16px;
 }
-@media screen and (max-width: 768px) {
-  .header {
-    justify-content: flex-start;
-  }
+@media screen and (max-width: 1180px) {
   .burger {
+    border: none;
+    background-color: transparent;
     display: block;
     margin-right: 24px;
   }
@@ -38,6 +37,11 @@
   }
   .logo {
     display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header {
+    justify-content: flex-start;
   }
   .user {
     display: none;

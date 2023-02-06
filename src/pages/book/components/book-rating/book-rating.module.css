@@ -73,9 +73,11 @@
 @media screen and (max-width: 320px) {
   .table {
     flex-direction: column;
-    gap: 10px;
     font-size: 12px;
     line-height: 16px;
+  }
+  .tbody1 {
+    margin-bottom: 10px;
   }
   .tableTitle {
     font-weight: 500;
