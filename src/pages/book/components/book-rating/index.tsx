@@ -57,7 +57,9 @@ export const BookRating = () => (
       </div>
     </div>
     <div className={styles.reviewButton}>
-      <ButtonPrimary isSmall={false}>оценить книгу</ButtonPrimary>
+      <ButtonPrimary data-test-id='button-rating' isSmall={false}>
+        оценить книгу
+      </ButtonPrimary>
     </div>
   </div>
 );

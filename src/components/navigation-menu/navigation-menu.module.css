@@ -27,4 +27,12 @@
   .main {
     display: none;
   }
+  .main.mainOpen {
+    position: absolute;
+    display: flex;
+    top: 116px;
+    left: 0;
+    background-color: #fff;
+    z-index: 100;
+  }
 }

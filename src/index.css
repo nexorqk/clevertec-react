@@ -12,8 +12,6 @@
   --grey-black-70: #727272;
 }
 body {
-  height: 100%;
-  justify-content: center;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   font-family: 'Montserrat', sans-serif;
@@ -77,6 +75,11 @@ select {
 textarea:focus,
 input:focus {
   outline: none;
+}
+.layout-main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 .greyBlack40 {
   color: var(--grey-black-40);

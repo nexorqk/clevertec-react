@@ -4,6 +4,9 @@
   border-top: 1px solid var(--grey-black-20);
   padding: 16px 0;
 }
+footer.footer {
+  margin-top: auto;
+}
 .socialMedia {
   display: flex;
   justify-content: space-between;

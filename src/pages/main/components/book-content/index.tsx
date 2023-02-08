@@ -16,9 +16,12 @@ export const BookContent = () => {
     <div className={styles.main}>
       <div className={styles.top}>
         <div className={styles.topInputs}>
-          <form className={styles.search} action=''>
+          <form data-test-id='button-search-open' className={styles.search} action=''>
             <div className={styles.searchIcon}>
               <SearchInputIcon />
+              <button data-test-id='button-search-close' type='button'>
+                Close
+              </button>
             </div>
             <input className={styles.searchInput} type='text' placeholder='Поиск книги или автора…' />
           </form>

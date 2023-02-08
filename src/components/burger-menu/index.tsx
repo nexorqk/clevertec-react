@@ -19,8 +19,8 @@ export const BurgerMenu = () => {
         data-test-id='button-burger'
         type='button'
         onClick={toggleMenuMode}
-        // className={`${styles.burgerButton} ${isOpen ? styles.open : ''}`}
-        className={classNames(styles.burgerButton, { visible: styles.open })}
+        className={`${styles.burgerButton} ${isOpen ? styles.open : ''}`}
+        // className={classNames(styles.burgerButton, { visible: styles.open })}
       >
         <div className={classNames(styles.burgerLine, styles.topLine)} />
         <div className={classNames(styles.burgerLine, styles.middleLine)} />

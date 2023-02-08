@@ -12,18 +12,42 @@ export const NavigationMenu: FC<{ mode: string }> = ({ mode }) => {
   const isActive2 = location.pathname;
 
   if (mode === 'burger') {
-    return <React.Fragment>Burger menu</React.Fragment>;
+    return (
+      <div className={classNames(styles.main, styles.mainOpen)}>
+        <NavLink data-test-id='burger-showcase' to='/' className={classNames('h5', styles.menuItem)}>
+          Витрина книг
+        </NavLink>
+        <ul className={styles.items}>
+          {navigationItems.map(({ id, path, name, count }) => (
+            <Link key={id} to={path}>
+              <li data-test-id={id === 1 ? 'burger-books' : ''} className={styles.item}>
+                <p className='bodyLarge'>
+                  {name}
+                  <span className={styles.count}>{count}</span>
+                </p>
+              </li>
+            </Link>
+          ))}
+        </ul>
+        <Link data-test-id='burger-terms' className={classNames('h5', styles.menuItem)} to='/terms'>
+          Правила пользования
+        </Link>
+        <Link data-test-id='burger-contract' className='h5' to='/contract'>
+          Договор оферты
+        </Link>
+      </div>
+    );
   }
 
   return (
     <div className={styles.main}>
-      <NavLink data-test-id='navigation-books' to='/' className={classNames('h5', styles.menuItem)}>
+      <NavLink data-test-id='navigation-showcase' to='/' className={classNames('h5', styles.menuItem)}>
         Витрина книг
       </NavLink>
       <ul className={styles.items}>
         {navigationItems.map(({ id, path, name, count }) => (
           <Link key={id} to={path}>
-            <li className={styles.item}>
+            <li data-test-id={id === 1 ? 'navigation-books' : ''} className={styles.item}>
               <p className='bodyLarge'>
                 {name}
                 <span className={styles.count}>{count}</span>
