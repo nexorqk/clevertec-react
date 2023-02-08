@@ -4,9 +4,6 @@
   justify-content: space-between;
   align-items: center;
 }
-.burger {
-  display: none;
-}
 .logo {
   display: flex;
   align-items: center;
@@ -26,15 +23,6 @@
   margin-right: 16px;
 }
 @media screen and (max-width: 1180px) {
-  .burger {
-    border: none;
-    background-color: transparent;
-    display: block;
-    margin-right: 24px;
-  }
-  .burger svg {
-    width: 24px;
-  }
   .logo {
     display: none;
   }

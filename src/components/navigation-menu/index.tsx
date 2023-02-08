@@ -1,3 +1,4 @@
+import React, { FC } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import classNames from 'classnames';
 
@@ -5,14 +6,18 @@ import { navigationItems } from './constants';
 
 import styles from './navigation-menu.module.css';
 
-export const NavigationMenu = () => {
+export const NavigationMenu: FC<{ mode: string }> = ({ mode }) => {
   const location = useLocation();
 
   const isActive2 = location.pathname;
 
+  if (mode === 'burger') {
+    return <React.Fragment>Burger menu</React.Fragment>;
+  }
+
   return (
     <div className={styles.main}>
-      <NavLink to='/' className={classNames('h5', styles.menuItem)}>
+      <NavLink data-test-id='navigation-books' to='/' className={classNames('h5', styles.menuItem)}>
         Витрина книг
       </NavLink>
       <ul className={styles.items}>
@@ -27,10 +32,10 @@ export const NavigationMenu = () => {
           </Link>
         ))}
       </ul>
-      <Link className={classNames('h5', styles.menuItem)} to='/terms'>
+      <Link data-test-id='navigation-terms' className={classNames('h5', styles.menuItem)} to='/terms'>
         Правила пользования
       </Link>
-      <Link className='h5' to='/contract'>
+      <Link data-test-id='navigation-contract' className='h5' to='/contract'>
         Договор оферты
       </Link>
     </div>

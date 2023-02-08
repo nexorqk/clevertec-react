@@ -3,15 +3,12 @@ import classNames from 'classnames';
 
 import { termsList } from './constants';
 import { RulesList } from './rules-list';
+import { TermsProps, TermsTitle } from './types';
 
 import styles from './terms.module.css';
 
-type TermsProps = {
-  contentView: string;
-};
-
 export const Terms: FC<TermsProps> = ({ contentView }) => {
-  const title = contentView === 'terms' ? 'Правила пользования' : 'Договор оферты';
+  const title = contentView === 'terms' ? TermsTitle.TERMS : TermsTitle.CONTRACT;
 
   return (
     <div className={styles.main}>
