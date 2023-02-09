@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import classNames from 'classnames';
 
 import { MenuView } from '../../types';
@@ -7,26 +7,55 @@ import { NavigationMenu } from '../navigation-menu';
 import styles from './burger-menu.module.css';
 
 export const BurgerMenu = () => {
-  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [isOpen, setOpen] = useState<boolean>(false);
+
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  const handleClickOutside = (event: MouseEvent) => {
+    if (!containerRef.current) {
+      return;
+    }
+
+    if (!containerRef.current.contains(event.target as Node)) {
+      setOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('click', handleClickOutside);
+
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, []);
+
+  useEffect(() => {
+    document.addEventListener('click', handleClickOutside);
+    document.body.style.overflow = isOpen ? 'hidden' : 'unset';
+
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+      document.body.style.overflow = 'unset';
+    };
+  }, [isOpen]);
 
   const toggleMenuMode = () => {
-    setIsOpen(!isOpen);
+    setOpen(!isOpen);
   };
 
   return (
-    <div className={styles.burgerMenu}>
+    <div ref={containerRef} className={styles.burgerMenu}>
       <button
         data-test-id='button-burger'
         type='button'
         onClick={toggleMenuMode}
         className={`${styles.burgerButton} ${isOpen ? styles.open : ''}`}
-        // className={classNames(styles.burgerButton, { visible: styles.open })}
       >
         <div className={classNames(styles.burgerLine, styles.topLine)} />
         <div className={classNames(styles.burgerLine, styles.middleLine)} />
         <div className={classNames(styles.burgerLine, styles.bottomLine)} />
       </button>
-      {isOpen && <NavigationMenu mode={MenuView.BURGER} />}
+      {isOpen && <NavigationMenu setOpen={setOpen} mode={MenuView.BURGER} />}
     </div>
   );
 };

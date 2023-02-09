@@ -32,7 +32,9 @@
     display: flex;
     top: 116px;
     left: 0;
-    background-color: #fff;
+    background: #f9f9fa;
     z-index: 100;
+    overflow: auto;
+    height: 100vh;
   }
 }

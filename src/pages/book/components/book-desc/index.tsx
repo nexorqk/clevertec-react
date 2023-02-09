@@ -1,11 +1,14 @@
+import { FC } from 'react';
 import classNames from 'classnames';
 
-import DesktopPrevieAlgos from '../../../../assets/img/desktop-preview-algos.png';
-import { ButtonPrimary } from '../../../../components';
+import DesktopPreviewAlgos from '../../../../assets/img/desktop-preview-algos.png';
+import DesktopPreviewCat from '../../../../assets/img/desktop-preview-cat.png';
+import { ButtonPrimary, CustomSwiper } from '../../../../components';
+import { BookDescProps } from '../../types';
 
 import styles from './book-desc.module.css';
 
-export const BookDesc = () => (
+export const BookDesc: FC<BookDescProps> = ({ bookData }) => (
   <div className={styles.bookDesc}>
     <div className={styles.routText}>
       <div className='wrapper'>
@@ -16,15 +19,21 @@ export const BookDesc = () => (
     </div>
     <div className='wrapper'>
       <div className={styles.bookSection}>
-        <img className={styles.bookImg} src={DesktopPrevieAlgos} alt='Preview Algos' />
+        {Array.isArray(bookData?.img) ? (
+          <CustomSwiper />
+        ) : (
+          <img
+            className={styles.bookImg}
+            src={bookData?.img === 'algo' ? DesktopPreviewAlgos : DesktopPreviewCat}
+            alt='Preview Algos'
+          />
+        )}
         <div className={styles.textRight}>
           <div className={styles.titleText}>
-            <p className={classNames('h3', styles.titleH)}>
-              Грокаем алгоритмы. Иллюстрированное пособие для программистов и любопытствующих
-            </p>
+            <p className={classNames('h3', styles.titleH)}>{bookData?.itemTitle}</p>
           </div>
           <div className={styles.subtitleText}>
-            <p className={classNames('h5 greyBlack40', styles.subtitleH)}>Адитья Бхаргава, 2019</p>
+            <p className={classNames('h5 greyBlack40', styles.subtitleH)}>{bookData?.itemSubtitle}</p>
           </div>
           <div className={styles.button}>
             <ButtonPrimary isSmall={false}>Забронировать</ButtonPrimary>

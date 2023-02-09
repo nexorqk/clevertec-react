@@ -17,8 +17,9 @@ export const BookItem: FC<BookItemProps> = ({
   title = 'Забронировать',
   disable,
   view,
+  bookId,
 }) => (
-  <Link className={view === 'list' ? styles.listMb : ''} to='/books/:category/:bookId'>
+  <Link className={view === 'list' ? styles.listMb : ''} to={`/books/:category/${bookId ?? 'bookId'}`}>
     {view === 'square' ? (
       <div className={styles.item} data-test-id='card'>
         <div>

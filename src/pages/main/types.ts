@@ -6,6 +6,7 @@ export type BookItemProps = {
   title?: string;
   disable?: boolean;
   view: string;
+  bookId?: string;
 };
 
 export type BookListProps = {
