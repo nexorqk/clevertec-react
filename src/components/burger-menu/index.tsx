@@ -29,16 +29,6 @@ export const BurgerMenu = () => {
     };
   }, []);
 
-  useEffect(() => {
-    document.addEventListener('click', handleClickOutside);
-    document.body.style.overflow = isOpen ? 'hidden' : 'unset';
-
-    return () => {
-      document.removeEventListener('click', handleClickOutside);
-      document.body.style.overflow = 'unset';
-    };
-  }, [isOpen]);
-
   const toggleMenuMode = () => {
     setOpen(!isOpen);
   };

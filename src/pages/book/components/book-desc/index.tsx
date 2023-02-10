@@ -20,7 +20,9 @@ export const BookDesc: FC<BookDescProps> = ({ bookData }) => (
     <div className='wrapper'>
       <div className={styles.bookSection}>
         {Array.isArray(bookData?.img) ? (
-          <CustomSwiper />
+          <div className={styles.customSwiper}>
+            <CustomSwiper />
+          </div>
         ) : (
           <img
             className={styles.bookImg}

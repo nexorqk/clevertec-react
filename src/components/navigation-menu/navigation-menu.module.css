@@ -1,9 +1,20 @@
 .main {
   display: flex;
   flex-direction: column;
+  margin-right: 30px;
+  width: 280px;
 }
 .menuItem {
   margin-bottom: 42px;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+.menuItem svg path {
+  fill: var(--dark-color);
+}
+.active svg path {
+  fill: var(--accept-color);
 }
 .items {
   max-width: 280px;
@@ -11,6 +22,12 @@
   flex-direction: column;
   gap: 16px;
   padding-left: 20px;
+}
+.items > li:last-child {
+  margin-bottom: 42px;
+}
+.borderBottom {
+  border-bottom: 1px solid var(--accept-color);
 }
 .item {
   display: flex;
@@ -34,7 +51,5 @@
     left: 0;
     background: #f9f9fa;
     z-index: 100;
-    overflow: auto;
-    height: 100vh;
   }
 }

@@ -159,6 +159,19 @@ input:focus {
   width: 90%;
   margin: 0 auto;
 }
+.toggleChevron {
+  display: none;
+}
+.active {
+  color: var(--accept-color);
+}
+.borderBottom {
+  border-bottom: 1px solid var(--accept-color);
+  color: var(--accept-color);
+}
+.borderBottom svg path {
+  fill: var(--accept-color);
+}
 @media (max-width: 768px) {
   .wrapper {
     max-width: 640px;

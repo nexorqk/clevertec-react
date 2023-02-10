@@ -9,6 +9,7 @@
 .search {
   position: relative;
   margin-right: 16px;
+  transition: all 0.3s ease;
 }
 .searchIcon {
   position: absolute;
@@ -25,6 +26,16 @@
     0px 1px 5px rgba(191, 196, 201, 0.24);
   border-radius: 599px;
   border: none;
+}
+.searchCloseIcon {
+  display: none;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 270px;
+  top: 11px;
+  border: none;
+  background-color: transparent;
 }
 .raitingButton {
   display: flex;
@@ -87,6 +98,9 @@
     top: 8px;
     left: 8px;
   }
+  .searchCloseIcon.open {
+    display: block;
+  }
   .raitingButton {
     width: 32px;
     height: 32px;
@@ -96,6 +110,10 @@
   }
   .searchInput {
     display: none;
+  }
+  .searchInput.wide {
+    display: block;
+    width: 300px;
   }
   .raitingText {
     display: none;

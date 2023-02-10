@@ -3,9 +3,7 @@
   justify-content: space-between;
   align-items: center;
   margin: 1em;
-
-  overflow: 'auto';
-  height: '100vh';
+  height: 100%;
 }
 .burgerButton {
   padding: 0;

@@ -13,7 +13,7 @@
   border-top: 1px solid var(--grey-black-10);
   padding-top: 16px;
 }
-.ratingStars > div {
+.raitingStarsStars {
   margin-right: 24px;
 }
 .detailTitle {
@@ -58,6 +58,13 @@
 .reviewsTitleS {
   font-size: 14px;
   line-height: 24px;
+  margin-right: 24px;
+}
+.reviewsTitleChevron {
+  cursor: pointer;
+}
+.reviewsTitleChevron svg path {
+  fill: var(--dark-color);
 }
 .userComment {
   margin-bottom: 42px;

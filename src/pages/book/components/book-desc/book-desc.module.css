@@ -27,6 +27,9 @@
 .about_768 {
   display: none;
 }
+.customSwiper {
+  max-width: 450px;
+}
 @media screen and (max-width: 768px) {
   .bookImg {
     width: 136px;
