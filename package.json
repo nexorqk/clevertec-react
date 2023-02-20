@@ -1,8 +1,11 @@
 {
   "name": "library.cleverland",
   "version": "0.1.0",
+  "homepage": "https://nexorqk.github.io/clevertec-react",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -39,6 +42,7 @@
     "eslint-plugin-react-hooks": "^4.5.0",
     "eslint-plugin-simple-import-sort": "^8.0.0",
     "eslint-plugin-unicorn": "^44.0.2",
+    "gh-pages": "^5.0.0",
     "lint-staged": "^12.4.1",
     "prettier": "^2.6.2",
     "prettier-eslint": "^14.0.2",
