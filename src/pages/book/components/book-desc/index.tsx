@@ -1,9 +1,9 @@
 import { FC } from 'react';
+import DesktopPreviewCat from 'assets/img/desktop-preview-cat.png';
 import classNames from 'classnames';
+import { ButtonPrimary, CustomSwiper } from 'components';
 
 import DesktopPreviewAlgos from '../../../../assets/img/desktop-preview-algos.png';
-import DesktopPreviewCat from '../../../../assets/img/desktop-preview-cat.png';
-import { ButtonPrimary, CustomSwiper } from '../../../../components';
 import { BookDescProps } from '../../types';
 
 import styles from './book-desc.module.css';

@@ -35,14 +35,14 @@ export const CustomSwiper = () => {
       </Swiper>
 
       <Swiper
-        onSwiper={setThumbsSwiper}
+        // onSwiper={setThumbsSwiper}
         loop={true}
         spaceBetween={10}
         slidesPerView={4}
         freeMode={true}
         watchSlidesProgress={true}
         modules={[Navigation]}
-        className={styles.thumbsSwiper}
+        className={styles.mySwiper2}
       >
         <SwiperSlide>
           <img src='https://swiperjs.com/demos/images/nature-1-thumb.jpg' alt='' />
