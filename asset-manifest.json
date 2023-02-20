@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/clevertec-react/static/css/main.cd7d3e8e.css",
+    "main.js": "/clevertec-react/static/js/main.d4e3cdd2.js",
+    "static/media/desktop-preview-algos.png": "/clevertec-react/static/media/desktop-preview-algos.9da885705ad92c16dd6f.png",
+    "static/media/algo-img.png": "/clevertec-react/static/media/algo-img.9bef810d0d75dda5c3d9.png",
+    "static/media/logo-text.svg": "/clevertec-react/static/media/logo-text.e0c9af4517b7471a6baf01e12e49f7f2.svg",
+    "static/media/close-search.svg": "/clevertec-react/static/media/close-search.bcd63f182a0abda174e8dff39513a3df.svg",
+    "static/media/icon-instagram.svg": "/clevertec-react/static/media/icon-instagram.1211ad0994a57eef5206cc722a2ef250.svg",
+    "static/media/view-squares.svg": "/clevertec-react/static/media/view-squares.600f665e31117bcba4d77b1a5a4f7486.svg",
+    "static/media/icon-vk.svg": "/clevertec-react/static/media/icon-vk.d548a55993294002518627753c2a9d7a.svg",
+    "static/media/raiting-icon.svg": "/clevertec-react/static/media/raiting-icon.6f6d1e97a78c7687d954012cbf2bdac0.svg",
+    "static/media/logo-icon.svg": "/clevertec-react/static/media/logo-icon.93689d7b9e68d0c8a259ebed4185817d.svg",
+    "static/media/view-burger.svg": "/clevertec-react/static/media/view-burger.3a7db53b64d78efda59d19a68342d383.svg",
+    "static/media/search-icon.svg": "/clevertec-react/static/media/search-icon.91615c901c567fe99f97a53beeeb327f.svg",
+    "static/media/star-active.svg": "/clevertec-react/static/media/star-active.ab08ba2a8f752bccfda1b609fd298a1a.svg",
+    "index.html": "/clevertec-react/index.html",
+    "static/media/icon-linkedin.svg": "/clevertec-react/static/media/icon-linkedin.302cdda94595ff1cef3e1d3c0dfbda5d.svg",
+    "static/media/chevron-down-icon.svg": "/clevertec-react/static/media/chevron-down-icon.b51221bc13cd0826be0d79612017f6e8.svg",
+    "static/media/star-empty.svg": "/clevertec-react/static/media/star-empty.a95d0bb3a6f2cae013ea3f2108b10f98.svg",
+    "static/media/chevron-up-icon.svg": "/clevertec-react/static/media/chevron-up-icon.65ba9ad1c1cac85978dd4f789d99c209.svg",
+    "static/media/icon-facebook.svg": "/clevertec-react/static/media/icon-facebook.f48191e628797b3b5109334219514fa9.svg",
+    "main.cd7d3e8e.css.map": "/clevertec-react/static/css/main.cd7d3e8e.css.map",
+    "main.d4e3cdd2.js.map": "/clevertec-react/static/js/main.d4e3cdd2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cd7d3e8e.css",
+    "static/js/main.d4e3cdd2.js"
+  ]
+}
